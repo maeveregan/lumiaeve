@@ -8,6 +8,30 @@
     body { font-family: 'Times New Roman', Times, serif; margin: 40px; }
     h1 { color: #333; }
     img { max-width: 300px; margin: 10px; }
+
+  figure {
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #eee;
+    padding: 10px;
+    background: #fafafa;
+    text-align: center;
+  }
+  figcaption {
+    margin-top: 10px;
+  }
+  figcaption ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95em;
+    color: #444;
+    text-align: left;
+    display: inline-block;
+  }
+  figcaption li {
+    margin-bottom: 2px;
+  }
   </style>
 </head>
 <body>
@@ -15,14 +39,37 @@
   <p>photos by maeve regan</p>
   
   <!-- Example photo section with visible captions -->
-  <figure>
-    <img src="000014.JPG" alt="nikon fm, catlabs xfilm 320pro. poker in chinatown. boston, ma">
-    <figcaption>nikon fm, catlabs xfilm 320pro. poker in chinatown. boston, ma</figcaption>
-  </figure>
-  
-  <figure>
-    <img src="000020.JPG" alt="nikon fm, kodak gold 200. reykjavik viti. iceland">
-    <figcaption>nikon fm, kodak gold 200. reykjavik viti. iceland</figcaption>
-  </figure>
+<figure>
+  <img src="000020.JPG" alt="nikon fm, kodak gold 200, reykjavik viti, iceland, 2023">
+  <figcaption>
+    <ul>
+      <li><strong>camera:</strong> nikon fm</li>
+      <li><strong>lens:</strong> 50mm f/1.2</li>
+      <li><strong>film:</strong> kodak gold</li>
+      <li><strong>iso:</strong> 200</li>
+      <li><strong>location:</strong> reykjavik, iceland</li>
+      <li><strong>year:</strong> 2023</li>
+      <li><strong>lab:</strong> <a href="https://www.catlabs.info" target="_blank">catlabs</a></li>
+      <li><strong>description:</strong> viti</li>
+    </ul>
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="000014.JPG" alt="nikon fm, catlabs xfilm 320pro, poker in chinatown, boston, ma, 2022">
+  <figcaption>
+    <ul>
+      <li><strong>camera:</strong> nikon fm</li>
+      <li><strong>lens:</strong> 50mm f/1.2</li>
+      <li><strong>film:</strong> catlabs xfilm pro</li>
+      <li><strong>iso:</strong> 320</li>
+      <li><strong>location:</strong> boston, massachusetts, united states</li>
+      <li><strong>year:</strong> 2023</li>
+      <li><strong>lab:</strong> <a href="https://www.catlabs.info" target="_blank">catlabs</a></li>
+      <li><strong>description:</strong> poker in chinatown</li>
+    </ul>
+  </figcaption>
+</figure>
+
 </body>
 </html>
