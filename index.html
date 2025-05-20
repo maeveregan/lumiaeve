@@ -8,6 +8,30 @@
     body { font-family: 'Times New Roman', Times, serif; margin: 40px; }
     h1 { color: #333; }
     img { max-width: 300px; margin: 10px; }
+
+  figure {
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #eee;
+    padding: 10px;
+    background: #fafafa;
+    text-align: center;
+  }
+  figcaption {
+    margin-top: 10px;
+  }
+  figcaption ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95em;
+    color: #444;
+    text-align: left;
+    display: inline-block;
+  }
+  figcaption li {
+    margin-bottom: 2px;
+  }
   </style>
 </head>
 <body>
@@ -15,14 +39,35 @@
   <p>photos by maeve regan</p>
   
   <!-- Example photo section with visible captions -->
-  <figure>
-    <img src="000014.JPG" alt="nikon fm, catlabs xfilm 320pro. poker in chinatown. boston, ma">
-    <figcaption>nikon fm, catlabs xfilm 320pro. poker in chinatown. boston, ma</figcaption>
-  </figure>
-  
-  <figure>
-    <img src="000020.JPG" alt="nikon fm, kodak gold 200. reykjavik viti. iceland">
-    <figcaption>nikon fm, kodak gold 200. reykjavik viti. iceland</figcaption>
-  </figure>
+<figure>
+  <img src="000020.JPG" alt="Nikon FM, Kodak Gold 200, Reykjavik Viti, Iceland, 2023">
+  <figcaption>
+    <ul>
+      <li><strong>Camera:</strong> Nikon FM</li>
+      <li><strong>Lens:</strong> 50mm f/1.8</li>
+      <li><strong>Film:</strong> Kodak Gold 200</li>
+      <li><strong>ISO:</strong> 200</li>
+      <li><strong>Location:</strong> Reykjavik Viti, Iceland</li>
+      <li><strong>Year:</strong> 2023</li>
+      <li><strong>Lab:</strong> Catlabs</li>
+    </ul>
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="000014.JPG" alt="Nikon FM, Catlabs XFilm 320Pro, Poker in Chinatown, Boston, MA, 2022">
+  <figcaption>
+    <ul>
+      <li><strong>Camera:</strong> Nikon FM</li>
+      <li><strong>Lens:</strong> 35mm f/2</li>
+      <li><strong>Film:</strong> Catlabs XFilm 320Pro</li>
+      <li><strong>ISO:</strong> 320</li>
+      <li><strong>Location:</strong> Poker in Chinatown, Boston, MA</li>
+      <li><strong>Year:</strong> 2022</li>
+      <li><strong>Lab:</strong> Catlabs</li>
+    </ul>
+  </figcaption>
+</figure>
+
 </body>
 </html>
