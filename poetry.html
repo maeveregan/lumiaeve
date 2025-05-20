@@ -12,11 +12,48 @@
       font-weight: bold;
     }
     nav a:hover { text-decoration: underline; }
-    pre { white-space: pre-wrap; font-size: 1.1em; }
+    .poem-box {
+      display: block;
+      margin: 20px auto;
+      border: 1px solid #eee;
+      padding: 20px;
+      background: #fafafa;
+      text-align: left;
+      max-width: 500px;
+      min-width: 300px;
+      vertical-align: top;
+    }
+    .poem-title {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 4px;
+      color: #444;
+    }
+    .poem-date {
+      font-size: 0.98em;
+      color: #888;
+      margin-bottom: 12px;
+    }
+    .poem-content {
+      white-space: pre-wrap;
+      font-size: 1.05em;
+      color: #222;
+      margin-bottom: 10px;
+    }
+    .poem-desc {
+      font-size: 0.95em;
+      color: #666;
+      margin-top: 10px;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.95em;
+      color: #666;
+    }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
   <nav>
     <a href="index.html">main</a>
     <a href="photography/portfolio.html">portfolio</a>
@@ -27,10 +64,10 @@
   <h1>poetry</h1>
   <p>by maeve regan</p>
 
-  <pre>
-  some clouds
-  18 May 2025
-
+  <div class="poem-box">
+    <div class="poem-title">some clouds</div>
+    <div class="poem-date">18 may 2025</div>
+    <div class="poem-content">
   some clouds are big. 
   some clouds are small. 
   some clouds move fast. 
@@ -59,10 +96,13 @@
   light will break through,
   and rouse your soul. 
   rejoice to find, 
-  heart strong and full. 
-  </pre>
+  heart strong and full.
+  </div>
 
-  <pre>
+  <div class="poem-box">
+    <div class="poem-title">she</div>
+    <div class="poem-date">2024</div>
+    <div class="poem-content">
   she has joy
   yet she is aware
   multitudes
@@ -78,9 +118,11 @@
   she's alive
   the future can't hurt
   steadfast, stuanch
-  /pre>
 
-  <footer style="margin-top: 40px; text-align: center; font-size: 0.95em; color: #666;">
+    </div>
+  </div>
+
+  <footer>
     &copy; 2025 maeve regan. All rights reserved.
   </footer>
 </body>
